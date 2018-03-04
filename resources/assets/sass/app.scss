@@ -1,9 +1,19 @@
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Google Icons
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-// Variables
-@import "variables";
+// Site
+@import "site/_colors";
+@import "site/_mixins";
+@import "site/_variables";
 
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "site/_animations";
+@import "site/_site";
+
+// Partials
+@import "partials/_footer";
+@import "partials/_forms";
+@import "partials/_nav";
+
+// Pages
+@import "pages/_home";
