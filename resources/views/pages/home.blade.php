@@ -3,7 +3,7 @@
 
 @section('content')
     <h1>DRINK or DARE</h1>
-    <p><b>Dare 1:</b> Dare someone to do something</p>
+    <p><b>Dare 1:</b> Dare someone to do something else</p>
 @stop
 
 
