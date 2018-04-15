@@ -85,7 +85,9 @@ ul {
 }
 
 .main {
-  padding: $content-py;
+  margin: auto;
+  max-width: 900px;
+  width: 90%;
 }
 
 .no-scroll {
