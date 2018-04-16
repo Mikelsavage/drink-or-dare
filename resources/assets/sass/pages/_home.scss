@@ -1,6 +1,33 @@
 .home {
-  .page-title {
-    font-size: 5em;
-    text-align: center;
+  .container {
+    display: flex;
+  }
+
+  .options {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+
+    .option {
+      background: white;
+      border: 3px solid $accent;
+      border-radius: 10px;
+      box-shadow: 5px 5px 20px $black-trans-60;
+      cursor: pointer;
+      display: flex;
+      height: 125px;
+      padding: 10px;
+      @include transition();
+      width: 125px;
+
+      p {
+        color: $text-dark;
+        margin: auto;
+      }
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
   }
 }

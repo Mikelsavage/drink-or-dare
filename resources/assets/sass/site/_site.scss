@@ -109,3 +109,9 @@ ul {
 .text-right {
   text-align: right;
 }
+
+.view {
+  background: linear-gradient(to right, $primary , $secondary);
+  display: flex;
+  min-height: 100vh;
+}

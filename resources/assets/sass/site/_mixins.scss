@@ -22,3 +22,7 @@
   -o-transform: $transform;
   -webkit-transform: $transform;
 }
+
+@mixin transition($transform: .3s all ease) {
+  transition: $transform;
+}

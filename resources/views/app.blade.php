@@ -15,10 +15,8 @@
 </head>
 <body>
     <div class="view {{ strtolower($page_class) }}">
-        @include('partials.nav')
-
         <div class="main">
-            @yield('content')
+            @yield('main')
         </div>
 
         @include('partials.footer')

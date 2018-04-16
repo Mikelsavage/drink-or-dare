@@ -440,7 +440,7 @@ h2,
 h3,
 li,
 p {
-  color: #333;
+  color: #efefef;
 }
 
 h1 {
@@ -479,8 +479,8 @@ ul {
 }
 
 .btn {
-  background: #ea3838;
-  border: 2px solid #ea3838;
+  background: #3fff4c;
+  border: 2px solid #3fff4c;
   color: #fff;
   cursor: pointer;
   font-size: 1.5rem;
@@ -492,7 +492,7 @@ ul {
 .btn:hover,
 .btn.active {
   background: #fff;
-  color: #ea3838;
+  color: #3fff4c;
   -webkit-box-shadow: 4px 4px 10px #aaa;
           box-shadow: 4px 4px 10px #aaa;
 }
@@ -529,8 +529,16 @@ ul {
   text-align: right;
 }
 
+.view {
+  background: -webkit-gradient(linear, left top, right top, from(#3fff4c), to(#1e26ff));
+  background: linear-gradient(to right, #3fff4c, #1e26ff);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
 .footer {
-  background: #28e9ef;
   bottom: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -547,35 +555,42 @@ ul {
   width: 100%;
 }
 
-.nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #ea3838;
+.home .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1em;
 }
 
-.nav .nav-link {
-  display: inline-block;
-  margin: 0 1em;
+.home .options {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto;
 }
 
-.nav .nav-link:hover a {
-  color: #fff;
+.home .options .option {
+  background: white;
+  border: 3px solid #28e9ef;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 125px;
+  padding: 10px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  width: 125px;
 }
 
-.nav .nav-link.active a {
-  color: #fff;
+.home .options .option p {
+  color: #222;
+  margin: auto;
 }
 
-.home .page-title {
-  font-size: 5em;
-  text-align: center;
+.home .options .option:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
